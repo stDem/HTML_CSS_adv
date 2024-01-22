@@ -1,0 +1,89 @@
+.breadcrumbs {
+  background-color: rgb(248, 243, 244);
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    font-size: 17px;
+    font-family: Lato;
+    color: $colorMain;
+    text-transform: uppercase;
+  }
+  &__mix {
+    a {
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 10px;
+      font-family: Lato;
+      color: $colorText;
+      text-transform: uppercase;
+      color: $colorTextGray;
+    }
+    a:last-child {
+      color: $colorMain;
+    }
+  }
+}
+.product-img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(234, 234, 234);
+  background-color: rgb(247, 247, 247);
+  @extend %flex-center;
+
+  img {
+    height: 50vh;
+  }
+}
+.product-description {
+  background-color: #ffffff;
+
+  &__text {
+    text-align: center;
+    h2 {
+      @include font(14px, 300, $colorMain);
+    }
+    h1 {
+      @include font(18px, 300, $colorTextGray);
+    }
+    p {
+      text-align: center;
+      @include font(14px, 300, $colorTextGray);
+    }
+    .price {
+      @include font(24px, 300, $colorMain);
+    }
+  }
+}
+.sort {
+  &__item {
+    @extend %flex-center;
+    gap: 40px;
+    &__category {
+      @include font(14px, 400, $colorTextGray);
+      border: none;
+    }
+  }
+  button {
+    @include font(16px, 400, $colorMain);
+    border-style: solid;
+    border-width: 1px;
+    border-color: $colorMain;
+    background-color: rgb(255, 255, 255);
+  }
+}
+.subscribe {
+  background-image: url(/img/img_single-page/subscribe_photo.png);
+  min-height: 45vh;
+  background-color: rgba(244, 244, 244, 0.7);
+  width: 100%;
+  background-size: cover;
+}
+.footer {
+  background-color: $colorBackgroundGray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}

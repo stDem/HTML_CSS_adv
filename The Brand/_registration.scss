@@ -1,0 +1,41 @@
+.banner-registration {
+  background-color: #f8f3f4;
+}
+.banner-registration__text {
+  color: $colorMain;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.form {
+  display: column;
+  padding-bottom: 10px;
+  h2 {
+    color: #222;
+
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  p {
+    color: #b1b1b1;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  button {
+    color: #fff;
+    background-color: $colorMain;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

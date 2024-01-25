@@ -396,3 +396,28 @@ $colorTextGray: #4d4d4d;
   justify-content: center;
 }
 @import "single";
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .search-form {
+    display: none;
+  }
+  .header {
+    display: flex;
+    gap: 50%;
+  }
+  .banner {
+    max-width: 50%;
+  }
+}
+@media (max-width: 767px) and (min-width: 390px) {
+  .search-form {
+    display: none;
+  }
+  .banner {
+    display: block;
+    padding-left: 5%;
+  }
+  .slider-img {
+    display: none;
+  }
+}
